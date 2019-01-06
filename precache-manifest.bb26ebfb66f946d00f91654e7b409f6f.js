@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9a6620fae278ffed35fc",
+    "revision": "fc62aa6dc0a11819fe36",
     "url": "/mac/static/css/main.4ab0649a.chunk.css"
   },
   {
-    "revision": "9a6620fae278ffed35fc",
-    "url": "/mac/static/js/main.9a6620fa.chunk.js"
+    "revision": "fc62aa6dc0a11819fe36",
+    "url": "/mac/static/js/main.fc62aa6d.chunk.js"
   },
   {
     "revision": "7756a7a8df7961048ea1",
@@ -312,7 +312,7 @@ self.__precacheManifest = [
     "url": "/mac/static/media/whatsapp.5c144fe3.png"
   },
   {
-    "revision": "1a4371430d36aad6a4b0dbfa767a5e73",
+    "revision": "51e9c34196826b3b6b60805304899372",
     "url": "/mac/index.html"
   }
 ];
