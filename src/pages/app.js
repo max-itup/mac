@@ -29,8 +29,7 @@ class App extends Component {
   }
 
   fetchData() {
-    const url = 'https://gist.githubusercontent.com/omaralbeik/d1d4aefafee1b1b280648b4da4a46775/raw/c81d0fa0ec96e9bb24474c353856eea244c43cb7/contents.json';
-
+    const url = 'https://raw.githubusercontent.com/max-itup/contents/master/mac.json'
     fetch(url)
       .then(response => response.json())
       .then(json => {        
