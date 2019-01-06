@@ -8,16 +8,17 @@ class Footer extends Component {
 
     render() {
         const omaralbeik = "https://omaralbeik.com";
-        const repo = "https://github.com/omaralbeik/maxitup";
-        const message = "Check out MaxItUp, the new way to set up your newly formatted Mac!";
-        const twitter = `https://twitter.com/home?status=${message}%0A${repo}`;
+        const org = "https://github.com/max-itup";
+        const website = "https://max-itup.github.io/mac/";
+        const message = "Check out MaxItUp, the new way to set up your newly formatted Mac! by @omaralbeik";
+        const twitter = `https://twitter.com/home?status=${message}%0A${website}`;
 
         return (
             <Wrapper>
                 <p>Copyright © {(new Date()).getFullYear()} <a href={omaralbeik} target="_blank" rel="noopener noreferrer">Omar Albeik</a>. All rights reserved.</p>
                 <p style={{marginLeft: 'auto'}}>v0.1</p>
                 <p>Share via <a className='twitter' href={twitter} target="_blank" rel="noopener noreferrer"> Twitter</a></p>
-                <p>Fork me on <a className='github' href={repo} target="_blank" rel="noopener noreferrer">Github</a></p>
+                <p>Fork me on <a className='github' href={org} target="_blank" rel="noopener noreferrer">Github</a></p>
             </Wrapper>
         );
     }

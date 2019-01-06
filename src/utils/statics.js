@@ -18,7 +18,7 @@ echo "Just start selecting items from the left pane and watch how the script is 
 
 echo "Move to your download directory and use your terminal to run the script and install selected apps and packages by running 'sh setup.sh'"
 
-echo "Visit github.com/omaralbeik/maxitup for more details"`;
+echo "Visit https://max-itup.github.io/mac/ for more details"`;
 
 export const placeholder = `${description}
 {{MAIN}}
