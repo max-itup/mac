@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro&subset=latin-ext');
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body,
+html,
+#root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: #252831;
+    font-family: 'Open Sans', sans-serif;
+}
+
+pre {
+    margin: 0;
+}
