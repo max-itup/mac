@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "fc62aa6dc0a11819fe36",
-    "url": "/mac/static/css/main.4ab0649a.chunk.css"
+    "revision": "6bfd0ede6f0935255c6f",
+    "url": "/mac/static/css/main.25a65b00.chunk.css"
   },
   {
-    "revision": "fc62aa6dc0a11819fe36",
-    "url": "/mac/static/js/main.fc62aa6d.chunk.js"
+    "revision": "6bfd0ede6f0935255c6f",
+    "url": "/mac/static/js/main.6bfd0ede.chunk.js"
   },
   {
-    "revision": "7756a7a8df7961048ea1",
-    "url": "/mac/static/css/1.22149504.chunk.css"
+    "revision": "63731cc661fd172ccfb0",
+    "url": "/mac/static/css/1.eb70c05b.chunk.css"
   },
   {
-    "revision": "7756a7a8df7961048ea1",
-    "url": "/mac/static/js/1.7756a7a8.chunk.js"
+    "revision": "63731cc661fd172ccfb0",
+    "url": "/mac/static/js/1.63731cc6.chunk.js"
   },
   {
     "revision": "0f25e016db6fd418bb25",
@@ -312,7 +312,7 @@ self.__precacheManifest = [
     "url": "/mac/static/media/whatsapp.5c144fe3.png"
   },
   {
-    "revision": "51e9c34196826b3b6b60805304899372",
+    "revision": "f1ced6571d2a74108b9122da3fb5f772",
     "url": "/mac/index.html"
   }
 ];
