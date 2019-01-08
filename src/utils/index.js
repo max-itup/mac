@@ -55,7 +55,7 @@ export function objectFromArray(arr, key = 'id') {
     let items = []
     
     data.forEach(category => {
-      let children = category.children || {};
+      let children = category.children;
       children = arrayFromObject(children);
       children.forEach(child => {
         if (child.is_selected) {

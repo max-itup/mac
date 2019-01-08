@@ -32,8 +32,14 @@ class App extends Component {
     const url = 'https://raw.githubusercontent.com/max-itup/contents/master/mac.json'
     fetch(url)
       .then(response => response.json())
-      .then(json => {        
-        this.props.loadCategories(json.categories);
+      .then(json => {
+        let categories = json.categories;
+        categories.forEach(c => {
+          c.children = [];
+          c.count = 0;
+          c.selected_count = 0;
+        });
+        this.props.loadCategories(categories);
         const count = json.items.length;
         json.items.forEach((item, index) => {
           if ((count - index) <= 1) {

@@ -26,7 +26,7 @@ function data(state = {}, action) {
         // load items to store
         case types.LOAD_ITEM:
             item.is_selected = false;
-            count = (state[item.category].count || 0) + 1;
+            count = state[item.category].count + 1;
             return {
                 ...state,
                 [item.category]: {
@@ -44,7 +44,7 @@ function data(state = {}, action) {
         // toggle item's is_selected
         case types.TOGGLE_ITEM_SELECTION:
             count = item.is_selected ? -1 : 1;
-            const selected_count = (state[item.category].selected_count || 0) + count;
+            const selected_count = state[item.category].selected_count + count;
             return {
                 ...state,
                 [item.category]: {
