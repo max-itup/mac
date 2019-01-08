@@ -28,6 +28,7 @@ const Wrapper = styled.div`
   flex: 2.15;
   overflow: scroll;
   height: calc(100% - 32px);
+  overflow-x: hidden;
 `;
 
 export default Contents;

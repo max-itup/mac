@@ -77,8 +77,9 @@ function mapDispatchToProps(dispatch) {
 
 const Wrapper = styled.div`
 padding: 10px;
-height: 360px;
-flex: 0 0 250px;
+height: 370px;
+flex: 0 0 260px;
+max-width: 260px;
 color: white;
 
 div {
@@ -124,13 +125,15 @@ a {
 
 p {
   font-size: 13px;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 code {
   margin-top: auto;
   color: white;
   user-select: text;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
 }
 `;
 

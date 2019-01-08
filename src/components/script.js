@@ -30,7 +30,7 @@ class Script extends Component {
 export const Wrapper = styled(Highlight)`
   flex: 1;
   margin: 0;
-  padding: 20px !important;
+  padding: 20px 20px 120px 20px !important;
   background-color: #323440;
   color: white;
   overflow-y: scroll;
@@ -40,7 +40,6 @@ export const Wrapper = styled(Highlight)`
   height: calc(100% - 32px);
   max-width: 500px;
   font-family: 'Source Code Pro', monospace;
-  padding-bottom: 110px !important;
 `;
 
 export default Script
