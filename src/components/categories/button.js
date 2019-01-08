@@ -25,21 +25,11 @@ class Button extends Component {
             badge = <Badge>{selected_count}</Badge>
         }
         
-        var img_url;
-        var button;
-        try {
-            img_url = require(`../../assets/categories/${category.id}.svg`);
-            const style = {backgroundImage: `url(${img_url})`}
-            button = <button key='button' id={id} onMouseUp={onMouseUp} style={style} data-tip={category.name}>{badge}</button>
-
-        } catch {
-            let initials = category.name.match(/\b\w/g) || [];
-            initials = ((initials.shift() || '') + (initials.pop() || '')).toUpperCase();            
-            button = <button key='button' id={id} onMouseUp={onMouseUp} data-tip={category.name}>{initials}{badge}</button>
-        }
+        const img_url = `https://raw.githubusercontent.com/max-itup/contents/master/assets/mac/categories/${category.id}.svg?sanitize=true`
+        const style = {backgroundImage: `url(${img_url})`}
 
         return [
-            button,
+            <button key='button' id={id} onMouseUp={onMouseUp} style={style} data-tip={category.name}>{badge}</button>,
             <ReactTooltip  key='tooltip' place="right" type="dark" effect="solid"/>
         ];
     }
