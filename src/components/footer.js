@@ -15,7 +15,7 @@ class Footer extends Component {
 
         return (
             <Wrapper>
-                <p>Copyright © {(new Date()).getFullYear()} <a href={omaralbeik} target="_blank" rel="noopener noreferrer">Omar Albeik</a>. All rights reserved.</p>
+                <p>An Open Source Project Built by <a href={omaralbeik} target="_blank" rel="noopener noreferrer">Omar Albeik</a>.</p>
                 <p style={{marginLeft: 'auto'}}>v0.1</p>
                 <p>Share via <a className='twitter' href={twitter} target="_blank" rel="noopener noreferrer"> Twitter</a></p>
                 <p>Fork me on <a className='github' href={org} target="_blank" rel="noopener noreferrer">Github</a></p>

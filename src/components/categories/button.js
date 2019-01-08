@@ -28,8 +28,9 @@ class Button extends Component {
         const img_url = `https://raw.githubusercontent.com/max-itup/contents/master/assets/mac/categories/${category.id}.svg?sanitize=true`
         const style = {backgroundImage: `url(${img_url})`}
 
+        let toolTip = `${category.name} (${category.count})`
         return [
-            <button key='button' id={id} onMouseUp={onMouseUp} style={style} data-tip={category.name}>{badge}</button>,
+            <button key='button' id={id} onMouseUp={onMouseUp} style={style} data-tip={toolTip}>{badge}</button>,
             <ReactTooltip  key='tooltip' place="right" type="dark" effect="solid"/>
         ];
     }
