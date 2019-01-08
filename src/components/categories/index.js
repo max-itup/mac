@@ -19,7 +19,7 @@ class Categories extends Component {
 
   handleClick(e) {    
     const id = e.target.id.replace('category-', '');
-    document.getElementById(id).scrollIntoView();
+    document.getElementById(id).scrollIntoView({ block: 'start',  behavior: 'smooth' });
   }
 
   render() {
