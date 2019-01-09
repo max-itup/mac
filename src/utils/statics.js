@@ -12,19 +12,20 @@ export const description = `#!/usr/bin/env bash
 #                                        |_|
 #
 
-echo "MaxItUp is a tool to create a setup script for newly formatted Mac devices."
+echo "[✋] MaxItUp is a tool to create a setup script for newly formatted Mac devices."
 
-echo "Just start selecting items from the left pane and watch how the script is updating!"
+echo "[😉] Just start selecting items from the left pane and watch how the script is updating!"
 
-echo "Move to your download directory and use your terminal to run the script and install selected apps and packages by running 'sh setup.sh'"
+echo "[💻] Move to your download directory and use your terminal to run the script and install selected apps and packages by running 'sh setup.sh'"
 
-echo "Visit https://max-itup.github.io/mac/ for more details"`;
+echo "[👋] Visit https://max-itup.github.io/mac/ for more details"`;
 
 export const placeholder = `${description}
 {{MAIN}}
 `;
 
 export const main = `
+
 echo "[🚀] Starting setup"
 
 # Install Homebrew if not already installed

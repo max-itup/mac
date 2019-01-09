@@ -10,6 +10,8 @@ import styled from 'styled-components';
 // Assets
 import icon from './../assets/download.svg';
 
+import {description} from '../utils/statics';
+
 class Download extends Component {
   constructor(props) {
     super(props);
@@ -17,7 +19,9 @@ class Download extends Component {
   }
 
   handleClick() {
-    const {script} = this.props.script;
+    let {script} = this.props.script;
+    script = description + script;
+
     const element = document.createElement("a");
     const file = new Blob([script], {type: 'application/x-sh'});
     element.href = URL.createObjectURL(file);
