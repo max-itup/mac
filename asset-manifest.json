@@ -1,7 +1,7 @@
 {
   "main.css": "/mac/static/css/main.b2f5b852.chunk.css",
-  "main.js": "/mac/static/js/main.a6e9e909.chunk.js",
-  "main.js.map": "/mac/static/js/main.a6e9e909.chunk.js.map",
+  "main.js": "/mac/static/js/main.50160b12.chunk.js",
+  "main.js.map": "/mac/static/js/main.50160b12.chunk.js.map",
   "static/css/1.71fbae19.chunk.css": "/mac/static/css/1.71fbae19.chunk.css",
   "static/js/1.e831c8fc.chunk.js": "/mac/static/js/1.e831c8fc.chunk.js",
   "static/js/1.e831c8fc.chunk.js.map": "/mac/static/js/1.e831c8fc.chunk.js.map",
@@ -13,6 +13,6 @@
   "static/css/main.b2f5b852.chunk.css.map": "/mac/static/css/main.b2f5b852.chunk.css.map",
   "static/css/1.71fbae19.chunk.css.map": "/mac/static/css/1.71fbae19.chunk.css.map",
   "index.html": "/mac/index.html",
-  "precache-manifest.a9198d46579c8c66bfa55dc0d895fdb7.js": "/mac/precache-manifest.a9198d46579c8c66bfa55dc0d895fdb7.js",
+  "precache-manifest.c603ba4f9c8a6b5ec992ec0faa5b8944.js": "/mac/precache-manifest.c603ba4f9c8a6b5ec992ec0faa5b8944.js",
   "service-worker.js": "/mac/service-worker.js"
 }
