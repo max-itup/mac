@@ -38,7 +38,7 @@ class Item extends Component {
     }
 
     const script = generateScript(items);
-    this.props.loadScript({script});
+    this.props.loadScript(script);
   }
 
   render() {
@@ -61,17 +61,6 @@ class Item extends Component {
         </div>
       </Wrapper>
     ];
-  }
-}
-
-function mapStateToProps(store) {
-  return store
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-    toggleItemSelection: (item) => dispatch(toggleItemSelection(item)),
-    loadScript: (script) => dispatch(loadScript(script)),
   }
 }
 
@@ -143,5 +132,15 @@ const Checkmark = styled.img`
   margin-left: auto;
 `;
 
+function mapStateToProps(store) {
+  return store
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    toggleItemSelection: (item) => dispatch(toggleItemSelection(item)),
+    loadScript: (script) => dispatch(loadScript(script)),
+  }
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(Item);

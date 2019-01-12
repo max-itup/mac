@@ -90,7 +90,7 @@ class App extends Component {
     return [
       <Categories key='categories' categories={data}/>,
       <Contents key='contents' data={data}/>,
-      <Script key='script' script={script.script}/>,
+      <Script key='script' script={script}/>,
       <Download key='download'/>,
       <Footer key='footer'/>
     ];

@@ -58,9 +58,7 @@ function script(state = "", action) {
 
         // load script to store
         case types.LOAD_SCRIPT:
-            return {
-                ...script,
-            };
+            return script;
 
         // any other action: return data
         default:
