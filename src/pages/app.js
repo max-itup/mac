@@ -5,12 +5,16 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {loadCategories, loadItem} from '../redux/actions';
 
+// Device detect
+import {isMobile} from "react-device-detect";
+
 // Components
 import Categories from '../components/categories';
 import Contents from '../components/contents';
 import Script from '../components/script';
 import Loading from '../components/loading';
 import Error from '../components/error';
+import Mobile from '../components/mobile';
 import Download from '../components/download';
 import Footer from '../components/footer';
 
@@ -57,6 +61,11 @@ class App extends Component {
   }
 
   render() {
+
+    if (isMobile) {
+      return <Mobile/>
+    }
+    
     const {is_loading, error} = this.state;
 
     if (error) {
@@ -69,7 +78,7 @@ class App extends Component {
 
     let {data, script} = this.props.store;
     data = arrayFromObject(data).sort((c1, c2) => (c1.order - c2.order));
-        
+
     return [
       <Categories key='categories' categories={data}/>,
       <Contents key='contents' data={data}/>,

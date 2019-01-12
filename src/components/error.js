@@ -7,14 +7,15 @@ import styled from 'styled-components';
 
 class Error extends Component {
     static propTypes = {
-        category: PropTypes.string,
+        title: PropTypes.string,
+        error: PropTypes.string,
     }
   
     render() {
-        const {error = "Unknown Error"} = this.props;
+        const {title = "Oops!", error = "Unknown Error"} = this.props;
         return (
             <Wrapper>
-                <h1>Oops!</h1>
+                <h1>{title}</h1>
                 <p>{error}</p>
             </Wrapper>
         );
