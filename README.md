@@ -35,7 +35,7 @@ Complete list of 3rd party dependencies can be found in [**package.json**](packa
 
 ## Adding new content
 
-To add, update, or remove content, please checkout [max-itup/content](https://github.com/max-itup/content)
+To add, update, or remove content, please check out [max-itup/content](https://github.com/max-itup/content)
 
 ## Thanks
 
