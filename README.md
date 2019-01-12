@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/max-itup/content/master/assets/readme_logo.svg?sanitize=true" title="MaxItUp!">
+  <img src="https://raw.githubusercontent.com/max-itup/content/master/assets/logo.svg?sanitize=true" title="MaxItUp!">
 </p>
 
 <p align="center">
