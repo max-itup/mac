@@ -17,7 +17,7 @@ class Contents extends Component {
     
     return (
       <Wrapper>
-        {data.map(c => <Category key={c.id} category={c}/>)}        
+        {data.map(c => <Category key={c.id} category={c}/>)}
       </Wrapper>
     );
   }

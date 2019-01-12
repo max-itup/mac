@@ -34,7 +34,7 @@ class Download extends Component {
     const disabled = (script === "");
 
     return (
-      <Button style={{backgroundImage: `url(${icon})`}} onClick={this.handleClick} disabled={disabled}/>
+      <Button title="Download setup script" style={{backgroundImage: `url(${icon})`}} onClick={this.handleClick} disabled={disabled}/>
     );
   }
 }

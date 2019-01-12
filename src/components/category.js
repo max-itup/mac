@@ -22,7 +22,7 @@ class Category extends Component {
       if(i1.id > i2.id) { return 1; }
       return 0;
     })
-        
+
     return (
       <Wrapper id={category.id}>
         <h1>{category.name} ({category.count})</h1>

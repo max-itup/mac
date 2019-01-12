@@ -46,7 +46,7 @@ class Item extends Component {
     const {is_selected = false} = item    
   
     const img_url = `https://raw.githubusercontent.com/max-itup/contents/master/mac/assets/items/${item.id}.png`
-    const style = {backgroundImage: `url(${img_url})`}
+    const style = {backgroundImage: `url(${img_url})`};
     style["border"] = is_selected ? "2px solid white" : null;
 
     const checkmark_style = is_selected ? {} : {display: 'none'};

@@ -30,7 +30,7 @@ class Button extends Component {
 
         let toolTip = `${category.name} (${category.count})`
         return [
-            <button key='button' id={id} onMouseUp={onMouseUp} style={style} data-tip={toolTip}>{badge}</button>,
+            <button key='button' id={id} title={category.name} onMouseUp={onMouseUp} style={style} data-tip={toolTip}>{badge}</button>,
             <ReactTooltip  key='tooltip' place="right" type="dark" effect="solid"/>
         ];
     }
