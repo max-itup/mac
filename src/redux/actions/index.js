@@ -11,13 +11,6 @@ export function loadCategories(categories) {
     };
 }
 
-export function loadItem({item}) {
-    return {
-        type: types.LOAD_ITEM,
-        item,
-    };
-}
-
 export function toggleItemSelection({item}) {
     return {
         type: types.TOGGLE_ITEM_SELECTION,

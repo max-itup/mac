@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 
 // Redux
 import {connect} from 'react-redux';
-import {loadCategories, loadItem} from '../redux/actions';
+import {loadCategories} from '../redux/actions';
 
 // Device detect
 import {isMobile} from "react-device-detect";
@@ -18,7 +18,7 @@ import Mobile from '../components/mobile';
 import Download from '../components/download';
 import Footer from '../components/footer';
 
-import {arrayFromObject} from '../utils';
+import {arrayFromObject, objectFromArray} from '../utils';
 
 class App extends Component {
   constructor(props) {
@@ -32,27 +32,36 @@ class App extends Component {
     this.fetchData();
   }
 
+  loadData(data) {    
+    let {categories, items} = data;
+
+    categories.forEach(c => {
+      c.count = 0;
+      c.selected_count = 0;
+      c.children = {};
+    });
+    
+    categories = objectFromArray(categories);
+
+    items.forEach(item => {
+      item.is_selected = false;
+      categories[item.category].count += 1;
+      categories[item.category].children[item.id] = item;
+    });
+
+    categories = arrayFromObject(categories);
+    this.props.loadCategories(categories);
+    this.setState({
+      is_loading: false,
+    })
+  }
+
   fetchData() {
     const url = 'https://raw.githubusercontent.com/max-itup/content/master/mac/data.json'
     fetch(url)
       .then(response => response.json())
-      .then(json => {
-        let categories = json.categories;
-        categories.forEach(c => {
-          c.children = [];
-          c.count = 0;
-          c.selected_count = 0;
-        });
-        this.props.loadCategories(categories);
-        const count = json.items.length;
-        json.items.forEach((item, index) => {
-          if ((count - index) <= 1) {
-            this.setState({
-              is_loading: false,
-            })
-          }
-          this.props.loadItem({item});
-        });
+      .then(data => {
+        this.loadData(data);
       }).catch(error => {
         this.setState({          
           error: error,
@@ -61,7 +70,6 @@ class App extends Component {
   }
 
   render() {
-
     if (isMobile) {
       return <Mobile/>
     }
@@ -96,7 +104,6 @@ function mapStateToProps(store) {
 function mapDispatchToProps(dispatch) {
   return {
     loadCategories: categories => dispatch(loadCategories(categories)),
-    loadItem: item => dispatch(loadItem(item)),
   }
 }
 

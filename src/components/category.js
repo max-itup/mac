@@ -15,13 +15,13 @@ class Category extends Component {
 
   render() {
     const {category} = this.props;
-    var items = Object.entries(category.children).map(([_, v]) => v);
-       
+    let items = Object.entries(category.children).map(([_, v]) => v);
+
     items.sort((i1, i2) => {
       if(i1.id < i2.id) { return -1; }
       if(i1.id > i2.id) { return 1; }
       return 0;
-    })
+    })    
 
     return (
       <Wrapper id={category.id}>

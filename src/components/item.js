@@ -42,17 +42,17 @@ class Item extends Component {
   }
 
   render() {
-    const {item} = this.props;
+    const {item} = this.props;    
     const {is_selected = false} = item    
   
     const img_url = `https://raw.githubusercontent.com/max-itup/content/master/mac/assets/items/${item.id}.png`
-    const style = {backgroundImage: `url(${img_url})`};
+    const style = {backgroundImage: `url(${img_url})`,};
     style["border"] = is_selected ? "2px solid white" : null;
 
     const checkmark_style = is_selected ? {} : {display: 'none'};
 
     return [
-      <Wrapper>
+      <Wrapper key={item.id} >
         <div style={style} onMouseUp={this.handleClick}>
           <Checkmark src={checkmark} alt='checkmark' style={checkmark_style}/>
           <h1><a href={item.download_url} target='_blanck'>{item.name}</a></h1>

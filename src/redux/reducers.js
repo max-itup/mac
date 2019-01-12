@@ -23,24 +23,6 @@ function data(state = {}, action) {
                 ...categories,
             };
 
-        // load items to store
-        case types.LOAD_ITEM:
-            item.is_selected = false;
-            count = state[item.category].count + 1;
-            return {
-                ...state,
-                [item.category]: {
-                    ...state[item.category],
-                    count: count,
-                    children: {
-                        ...state[item.category].children,
-                        [item.id]: {
-                            ...item,
-                        }
-                    }
-                }
-            };
-
         // toggle item's is_selected
         case types.TOGGLE_ITEM_SELECTION:
             count = item.is_selected ? -1 : 1;

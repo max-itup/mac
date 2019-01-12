@@ -13,8 +13,7 @@ class Contents extends Component {
   }
 
   render() {
-    const {data} = this.props;
-    
+    const {data} = this.props;        
     return (
       <Wrapper>
         {data.map(c => <Category key={c.id} category={c}/>)}
