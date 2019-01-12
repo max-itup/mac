@@ -28,10 +28,14 @@ To create a production build, use:
 npm run build
 ```
 
-## Dependencies
-This project is built using [React JS](https://reactjs.org/), [Redux](https://redux.js.org/) and other dependencies.
+### Dependencies
 
+This project is built using [React JS](https://reactjs.org/), [Redux](https://redux.js.org/) and other dependencies.
 Complete list of 3rd party dependencies can be found in [**package.json**](package.json)
+
+## Adding new content
+
+To add, update, or remove content, please checkout [max-itup/content](https://github.com/max-itup/content)
 
 ## Thanks
 
