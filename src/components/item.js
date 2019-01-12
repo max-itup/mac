@@ -45,7 +45,7 @@ class Item extends Component {
     const {item} = this.props;
     const {is_selected = false} = item    
   
-    const img_url = `https://raw.githubusercontent.com/max-itup/contents/master/mac/assets/items/${item.id}.png`
+    const img_url = `https://raw.githubusercontent.com/max-itup/content/master/mac/assets/items/${item.id}.png`
     const style = {backgroundImage: `url(${img_url})`};
     style["border"] = is_selected ? "2px solid white" : null;
 

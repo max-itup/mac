@@ -25,7 +25,7 @@ class Button extends Component {
             badge = <Badge>{selected_count}</Badge>
         }
         
-        const img_url = `https://raw.githubusercontent.com/max-itup/contents/master/mac/assets/categories/${category.id}.svg?sanitize=true`
+        const img_url = `https://raw.githubusercontent.com/max-itup/content/master/mac/assets/categories/${category.id}.svg?sanitize=true`
         const style = {backgroundImage: `url(${img_url})`}
 
         let toolTip = `${category.name} (${category.count})`
