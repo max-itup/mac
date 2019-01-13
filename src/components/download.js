@@ -30,7 +30,7 @@ class Download extends Component {
   }
 
   render() {
-    const {script = ""} = this.props.script;    
+    const {script = ""} = this.props;    
     const disabled = (script === "");
 
     return (
