@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "a0cb0b87ea0cd2d5f05a",
+    "revision": "6b0ddca2f80a188eea83",
     "url": "/mac/static/css/main.48d4bf89.chunk.css"
   },
   {
-    "revision": "a0cb0b87ea0cd2d5f05a",
-    "url": "/mac/static/js/main.a0cb0b87.chunk.js"
+    "revision": "6b0ddca2f80a188eea83",
+    "url": "/mac/static/js/main.6b0ddca2.chunk.js"
   },
   {
     "revision": "f4b865f515190aa7354b",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/mac/static/media/download.9ba15c41.svg"
   },
   {
-    "revision": "d269fb303f4704583953dd3313caacca",
+    "revision": "67b9a540f90226558a1929002d200e8f",
     "url": "/mac/index.html"
   }
 ];
