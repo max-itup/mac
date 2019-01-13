@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Category from './category';
+import Header from './header';
 
 class Contents extends Component {
   static propTypes = {
@@ -16,6 +17,7 @@ class Contents extends Component {
     const {data} = this.props;        
     return (
       <Wrapper>
+        <Header/>
         {data.map(c => <Category key={c.id} category={c}/>)}
       </Wrapper>
     );
