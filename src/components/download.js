@@ -19,7 +19,7 @@ class Download extends Component {
   }
 
   handleClick() {
-    let {script} = this.props.script;
+    let {script} = this.props;
     script = description + script;
 
     const element = document.createElement("a");
