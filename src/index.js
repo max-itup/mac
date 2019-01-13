@@ -20,4 +20,4 @@ const store = createStore(rootReducer, reduxDevTools);
 
 ReactDOM.render(<Provider store={store}><App/></Provider>, document.getElementById('root'));
 
-serviceWorker.register();
+serviceWorker.unregister();

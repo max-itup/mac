@@ -23,10 +23,9 @@ class Header extends Component {
         return (
             <Wrapper id='header'>
                 <img src={logo} alt='MaxItUp!'/>
-                <h1>MaxItUp is a Mac setup tool to create a setup script for newly formatted Mac devices.</h1>
+                <h1>MaxItUp is a Mac setup tool to create<br/>a setup script for newly formatted Mac devices.</h1>
                 <p>
                 Start selecting items and watch how the script is updating!
-                <br/>
                 Move to your download directory and use your terminal to run the script and install selected apps and packages by running <code>sh setup.sh</code>
                 </p>
                 <button className='animated infinite flash' onMouseUp={this.handleClick}><img src={scrollDown} alt='scroll down'/></button>
@@ -48,12 +47,19 @@ const Wrapper = styled.div`
     user-select: none;
 
     > h1 {
-        font-size: 24px;
+        font-size: 14pt;
+        line-height: 1.5;
+        width: 330px;
     }
 
     > p {
-        padding: 20px 70px;
-        
+        width: 470px;
+        text-align: justify;
+        font-family: Arial;
+        font-size: 10pt;
+        font-weight: normal;
+        color: #bbb;
+        padding: 13px 70px;        
         code {
             user-select: text;
         }
