@@ -1,7 +1,7 @@
 {
   "main.css": "/mac/static/css/main.04148c30.chunk.css",
-  "main.js": "/mac/static/js/main.75a29fbd.chunk.js",
-  "main.js.map": "/mac/static/js/main.75a29fbd.chunk.js.map",
+  "main.js": "/mac/static/js/main.cf38bcb6.chunk.js",
+  "main.js.map": "/mac/static/js/main.cf38bcb6.chunk.js.map",
   "static/css/1.4ed60ceb.chunk.css": "/mac/static/css/1.4ed60ceb.chunk.css",
   "static/js/1.29b84a60.chunk.js": "/mac/static/js/1.29b84a60.chunk.js",
   "static/js/1.29b84a60.chunk.js.map": "/mac/static/js/1.29b84a60.chunk.js.map",
@@ -12,9 +12,9 @@
   "static/media/scroll_down.svg": "/mac/static/media/scroll_down.f41fa70b.svg",
   "static/media/mobile_logo.svg": "/mac/static/media/mobile_logo.091a5a07.svg",
   "static/media/download.svg": "/mac/static/media/download.9ba15c41.svg",
-  "static/css/main.04148c30.chunk.css.map": "/mac/static/css/main.04148c30.chunk.css.map",
   "static/css/1.4ed60ceb.chunk.css.map": "/mac/static/css/1.4ed60ceb.chunk.css.map",
+  "static/css/main.04148c30.chunk.css.map": "/mac/static/css/main.04148c30.chunk.css.map",
   "index.html": "/mac/index.html",
-  "precache-manifest.b5e6277897174e747575fb72d757ced3.js": "/mac/precache-manifest.b5e6277897174e747575fb72d757ced3.js",
+  "precache-manifest.3a3ae27cc39000fcad9ceea74cfff0d0.js": "/mac/precache-manifest.3a3ae27cc39000fcad9ceea74cfff0d0.js",
   "service-worker.js": "/mac/service-worker.js"
 }
