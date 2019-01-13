@@ -66,9 +66,9 @@ class Item extends Component {
 
 const Wrapper = styled.div`
 padding: 10px;
-height: 370px;
-flex: 0 0 260px;
-max-width: 260px;
+height: 365px;
+flex: 0 0 225px;
+max-width: 225px;
 color: white;
 
 div {
