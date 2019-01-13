@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Source+Code+Pro');
 
 body {
     margin: 0;
@@ -14,7 +14,7 @@ html,
     flex-direction: row;
     align-items: stretch;
     background-color: #252831;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 pre {

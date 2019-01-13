@@ -1,7 +1,6 @@
 export const description = `#!/usr/bin/env bash
 
 #
-#
 #  __  __              _____ _     _    _         _ 
 # |  \\/  |            |_   _| |   | |  | |       | |
 # | \\  / | __ ___  __   | | | |_  | |  | |_ __   | |
@@ -10,7 +9,6 @@ export const description = `#!/usr/bin/env bash
 # |_|  |_|\\__,_/_/\\_\\ |_____|\\__|  \\____/| .__/  (_)
 #                                        | |
 #                                        |_|
-#
 
 echo "[✋] MaxItUp is a tool to create a setup script for newly formatted Mac devices."
 
