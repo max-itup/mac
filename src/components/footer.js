@@ -4,6 +4,9 @@ import React, {Component} from 'react';
 // Styled Components
 import styled from 'styled-components';
 
+// package.json
+import packageJson from '../package.alias.json';
+
 class Footer extends Component {
 
     render() {
@@ -16,7 +19,7 @@ class Footer extends Component {
         return (
             <Wrapper>
                 <p>An Open Source Project Built by <a href={omaralbeik} target="_blank" rel="noopener noreferrer">Omar Albeik</a>.</p>
-                <p style={{marginLeft: 'auto'}}>v0.2.0</p>
+                <p style={{marginLeft: 'auto'}}>{packageJson.version}</p>
                 <p>Share via <a className='twitter' href={twitter} target="_blank" rel="noopener noreferrer"> Twitter</a></p>
                 <p>Fork me on <a className='github' href={org} target="_blank" rel="noopener noreferrer">Github</a></p>
             </Wrapper>
