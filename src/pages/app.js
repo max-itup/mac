@@ -18,11 +18,19 @@ import Mobile from '../components/mobile';
 import Download from '../components/download';
 import Footer from '../components/footer';
 
+// PWA
+import * as serviceWorker from '../serviceWorker';
+
+// Helpers
 import {arrayFromObject, objectFromArray} from '../utils';
 
 class App extends Component {
   constructor(props) {
     super(props);
+
+    serviceWorker.register({
+      onUpdate: this.handleServiceWorkerUpdate
+    });
 
     this.state = {
       is_loading: true,
@@ -30,6 +38,12 @@ class App extends Component {
     };
 
     this.fetchData();
+  }
+
+  handleServiceWorkerUpdate() {
+    if (window.confirm('New update has been installed, click to restart')) {
+      window.location.reload()
+    }
   }
 
   loadData(data) {    

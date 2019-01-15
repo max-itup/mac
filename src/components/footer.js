@@ -16,7 +16,7 @@ class Footer extends Component {
         return (
             <Wrapper>
                 <p>An Open Source Project Built by <a href={omaralbeik} target="_blank" rel="noopener noreferrer">Omar Albeik</a>.</p>
-                <p style={{marginLeft: 'auto'}}>v0.1</p>
+                <p style={{marginLeft: 'auto'}}>v0.2.0</p>
                 <p>Share via <a className='twitter' href={twitter} target="_blank" rel="noopener noreferrer"> Twitter</a></p>
                 <p>Fork me on <a className='github' href={org} target="_blank" rel="noopener noreferrer">Github</a></p>
             </Wrapper>

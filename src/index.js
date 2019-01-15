@@ -10,7 +10,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/index.css';
 
 import App from './pages/app';
-import * as serviceWorker from './serviceWorker';
 
 // Redux dev tools
 const reduxDevTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
@@ -19,5 +18,3 @@ const reduxDevTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVT
 const store = createStore(rootReducer, reduxDevTools);
 
 ReactDOM.render(<Provider store={store}><App/></Provider>, document.getElementById('root'));
-
-serviceWorker.unregister();
