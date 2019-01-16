@@ -41,8 +41,8 @@ class App extends Component {
   }
 
   handleServiceWorkerUpdate() {
-    if (window.confirm('New update has been installed, click to restart')) {
-      window.location.reload()
+    if (window.confirm('A new update has been installed, click to restart')) {
+      window.location.reload(true)
     }
   }
 

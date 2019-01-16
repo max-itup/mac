@@ -1,8 +1,18 @@
 {
   "name": "max-it-up",
   "homepage": "https://max-itup.github.io/mac",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "private": true,
+  "bugs": {
+    "url": "https://github.com/max-itup/mac/issues",
+    "email": "omaralbeik@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Omar Albeik",
+    "email": "omaralbeik@gmail.com",
+    "url": "https://omaralbeik.com/"
+  },
   "dependencies": {
     "animate.css": "^3.7.0",
     "bootstrap": "^4.2.1",
