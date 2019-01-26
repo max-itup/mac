@@ -8,6 +8,10 @@ import {loadCategories} from '../redux/actions';
 // Device detect
 import {isMobile} from "react-device-detect";
 
+// Notifications
+import {ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
+
 // Components
 import Categories from '../components/categories';
 import Contents from '../components/contents';
@@ -41,9 +45,26 @@ class App extends Component {
   }
 
   handleServiceWorkerUpdate() {
-    if (window.confirm('A new update has been installed, click to restart')) {
-      window.location.reload(true)
+    // Clear IndexDB
+    indexedDB.webkitGetDatabaseNames().onsuccess = (event) => {
+      Array.prototype.forEach.call(event.target.result, indexedDB.deleteDatabase.bind(indexedDB));
     }
+
+    // Clear Coockies
+    document.cookie.split(";").forEach((c) => { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
+    
+    // Clear LocalStorage
+    window.localStorage.clear();
+
+    const message = 'New content is available, refresh the page to apply changes';
+    toast.info(message, {
+      position: "top-right",
+      autoClose: 4000,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      closeButton: false,
+      });
   }
 
   loadData(data) {    
@@ -106,7 +127,8 @@ class App extends Component {
       <Contents key='contents' data={data}/>,
       <Script key='script' script={script}/>,
       <Download key='download'/>,
-      <Footer key='footer'/>
+      <Footer key='footer'/>,
+      <ToastContainer key='notifications'/>,
     ];
   }
 }

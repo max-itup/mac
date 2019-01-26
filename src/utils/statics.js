@@ -70,7 +70,7 @@ GEMS=(
     ${codes}
 )
 echo "💎 Installing Ruby gems..."
-sudo gem install \${GEMS[@]}
+sudo gem install \${GEMS[@]} -N
 `
 }
 

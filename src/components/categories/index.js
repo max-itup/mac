@@ -7,6 +7,10 @@ import styled from 'styled-components';
 
 import Button from './button';
 
+
+// Smoothscroll polyfill for Safari
+import smoothscroll from 'smoothscroll-polyfill';
+
 class Categories extends Component {
   static propTypes = {
     categories: PropTypes.array.isRequired
@@ -14,6 +18,7 @@ class Categories extends Component {
 
   constructor(props) {
     super(props);
+    smoothscroll.polyfill();
     this.handleClick = this.handleClick.bind(this);
   }
 

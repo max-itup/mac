@@ -6,6 +6,9 @@ import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 import rootReducer from './redux/reducers'
 
+// Google Analytics
+import ReactGA from 'react-ga';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/index.css';
 
@@ -16,5 +19,8 @@ const reduxDevTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVT
 
 // Redux Store
 const store = createStore(rootReducer, reduxDevTools);
+
+ReactGA.initialize('UA-133306128-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(<Provider store={store}><App/></Provider>, document.getElementById('root'));
