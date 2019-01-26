@@ -56,6 +56,9 @@ class App extends Component {
     // Clear LocalStorage
     window.localStorage.clear();
 
+    // Unregister current service worker
+    serviceWorker.unregister();
+
     const message = 'New content is available, refresh the page to apply changes';
     toast.info(message, {
       position: "top-right",
