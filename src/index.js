@@ -6,6 +6,9 @@ import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 import rootReducer from './redux/reducers'
 
+// PWA
+import * as serviceWorker from './serviceWorker';
+
 // Google Analytics
 import ReactGA from 'react-ga';
 
@@ -24,3 +27,5 @@ ReactGA.initialize('UA-133306128-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(<Provider store={store}><App/></Provider>, document.getElementById('root'));
+
+serviceWorker.unregister();

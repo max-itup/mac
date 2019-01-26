@@ -8,10 +8,6 @@ import {loadCategories} from '../redux/actions';
 // Device detect
 import {isMobile} from "react-device-detect";
 
-// Notifications
-import {ToastContainer, toast} from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.min.css';
-
 // Components
 import Categories from '../components/categories';
 import Contents from '../components/contents';
@@ -22,9 +18,6 @@ import Mobile from '../components/mobile';
 import Download from '../components/download';
 import Footer from '../components/footer';
 
-// PWA
-import * as serviceWorker from '../serviceWorker';
-
 // Helpers
 import {arrayFromObject, objectFromArray} from '../utils';
 
@@ -32,35 +25,12 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    serviceWorker.register({
-      onUpdate: this.handleServiceWorkerUpdate
-    });
-
     this.state = {
       is_loading: true,
       error: null,
     };
 
     this.fetchData();
-  }
-
-  handleServiceWorkerUpdate() {
-    // Unregister all registered service workers
-    navigator.serviceWorker.getRegistrations().then((registrations) => {
-      for(let registration of registrations) {
-        registration.unregister()
-      }
-    });
-
-    const message = 'New content is available, refresh the page to apply changes';
-    toast.info(message, {
-      position: "top-right",
-      autoClose: 4000,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      closeButton: false,
-      });
   }
 
   loadData(data) {    
@@ -124,7 +94,6 @@ class App extends Component {
       <Script key='script' script={script}/>,
       <Download key='download'/>,
       <Footer key='footer'/>,
-      <ToastContainer key='notifications'/>,
     ];
   }
 }
