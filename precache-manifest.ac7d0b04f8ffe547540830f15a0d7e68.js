@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "03be599d426229b934de",
-    "url": "/mac/static/css/main.c3e76ed8.chunk.css"
+    "revision": "3cc4f03fd53a499288d0",
+    "url": "/mac/static/css/main.00a64381.chunk.css"
   },
   {
-    "revision": "03be599d426229b934de",
-    "url": "/mac/static/js/main.03be599d.chunk.js"
+    "revision": "3cc4f03fd53a499288d0",
+    "url": "/mac/static/js/main.3cc4f03f.chunk.js"
   },
   {
-    "revision": "b30a543de2baa6d06573",
-    "url": "/mac/static/css/1.a2fcaf9f.chunk.css"
+    "revision": "b05c452be97f8cac97d5",
+    "url": "/mac/static/css/1.dab2b030.chunk.css"
   },
   {
-    "revision": "b30a543de2baa6d06573",
-    "url": "/mac/static/js/1.b30a543d.chunk.js"
+    "revision": "b05c452be97f8cac97d5",
+    "url": "/mac/static/js/1.b05c452b.chunk.js"
   },
   {
     "revision": "0f25e016db6fd418bb25",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/mac/static/media/download.9ba15c41.svg"
   },
   {
-    "revision": "c0bb20b58acc1d8bd8ee0a375a1ee2f2",
+    "revision": "940ff37d4debebd45f6463be0661c696",
     "url": "/mac/index.html"
   }
 ];
