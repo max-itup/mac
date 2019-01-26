@@ -45,6 +45,13 @@ class App extends Component {
   }
 
   handleServiceWorkerUpdate() {
+    // Unregister all registered service workers
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for(let registration of registrations) {
+        registration.unregister()
+      }
+    });
+
     // Clear IndexDB
     indexedDB.webkitGetDatabaseNames().onsuccess = (event) => {
       Array.prototype.forEach.call(event.target.result, indexedDB.deleteDatabase.bind(indexedDB));
@@ -55,9 +62,6 @@ class App extends Component {
     
     // Clear LocalStorage
     window.localStorage.clear();
-
-    // Unregister current service worker
-    serviceWorker.unregister();
 
     const message = 'New content is available, refresh the page to apply changes';
     toast.info(message, {
