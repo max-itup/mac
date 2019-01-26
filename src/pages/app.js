@@ -52,17 +52,6 @@ class App extends Component {
       }
     });
 
-    // Clear IndexDB
-    indexedDB.webkitGetDatabaseNames().onsuccess = (event) => {
-      Array.prototype.forEach.call(event.target.result, indexedDB.deleteDatabase.bind(indexedDB));
-    }
-
-    // Clear Coockies
-    document.cookie.split(";").forEach((c) => { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
-    
-    // Clear LocalStorage
-    window.localStorage.clear();
-
     const message = 'New content is available, refresh the page to apply changes';
     toast.info(message, {
       position: "top-right",
