@@ -4,10 +4,12 @@ import React, {Component} from 'react';
 // Styled Components
 import styled from 'styled-components';
 
+// Styles
+import 'animate.css';
+
+// Assets
 import logo from '../assets/header_logo.svg';
 import scrollDown from '../assets/scroll_down.svg';
-
-import 'animate.css';
 
 class Header extends Component {
     constructor(props) {
@@ -59,7 +61,7 @@ const Wrapper = styled.div`
         font-size: 10pt;
         font-weight: normal;
         color: #bbb;
-        padding: 13px 70px;        
+        padding: 13px 70px;
         code {
             user-select: text;
         }
@@ -70,7 +72,7 @@ const Wrapper = styled.div`
         background: #252831;
         border: none;
         :focus {
-            outline: 0;  
+            outline: 0;
         }
     }
 `;

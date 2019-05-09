@@ -1,3 +1,4 @@
+// React
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -12,9 +13,11 @@ import * as serviceWorker from './serviceWorker';
 // Google Analytics
 import ReactGA from 'react-ga';
 
+// Styles
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/index.css';
 
+// Pages
 import App from './pages/app';
 
 // Redux dev tools

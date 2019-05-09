@@ -10,6 +10,7 @@ import styled from 'styled-components';
 // Assets
 import icon from './../assets/download.svg';
 
+// Statics
 import {description} from '../utils/statics';
 
 class Download extends Component {
@@ -30,7 +31,7 @@ class Download extends Component {
   }
 
   render() {
-    const {script = ""} = this.props;    
+    const {script = ""} = this.props;
     const disabled = (script === "");
 
     return (
@@ -57,7 +58,7 @@ const Button = styled.button`
   :hover {
     background-color: #F5A623;
   }
-  
+
   :disabled {
     background-color: #F8C105;
     opacity: 0.5;

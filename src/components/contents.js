@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 // Styled Components
 import styled from 'styled-components';
 
+// Components
 import Category from './category';
 import Header from './header';
 
@@ -14,7 +15,7 @@ class Contents extends Component {
   }
 
   render() {
-    const {data} = this.props;        
+    const {data} = this.props;
     return (
       <Wrapper>
         <Header/>
