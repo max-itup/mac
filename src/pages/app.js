@@ -46,7 +46,7 @@ class App extends Component {
     }
   }
 
-  loadData(data) {    
+  loadData(data) {
     let {categories, items} = data;
 
     categories.forEach(c => {
@@ -54,7 +54,7 @@ class App extends Component {
       c.selected_count = 0;
       c.children = {};
     });
-    
+
     categories = objectFromArray(categories);
 
     items.forEach(item => {
@@ -77,7 +77,7 @@ class App extends Component {
       .then(data => {
         this.loadData(data);
       }).catch(error => {
-        this.setState({          
+        this.setState({
           error: error,
         })
       });
@@ -87,13 +87,13 @@ class App extends Component {
     if (isMobile) {
       return <Mobile/>
     }
-    
+
     const {is_loading, error} = this.state;
 
     if (error) {
       return <Error error={error.toString()}/>;
     }
-    
+
     if (is_loading) {
       return <Loading/>
     }

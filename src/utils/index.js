@@ -12,7 +12,7 @@ export function objectFromArray(arr, key = 'id') {
     }
     return {};
   }
-  
+
   /**
    * Create an array from a given object
    */
@@ -22,7 +22,7 @@ export function objectFromArray(arr, key = 'id') {
 
   export function generateScript(itemsArray) {
     if (itemsArray.length === 0) {
-      return "";
+      return '';
     }
     let cask_items = [];
     let brew_items = [];
@@ -40,7 +40,7 @@ export function objectFromArray(arr, key = 'id') {
         os_settings_items.push(item);
       }
     });
-    
+
     var script = statics.main;
     script = script.replace('{{CASKS}}', statics.casks(cask_items));
     script = script.replace('{{PACKAGES}}', statics.brew(brew_items));
@@ -53,7 +53,7 @@ export function objectFromArray(arr, key = 'id') {
     const data = arrayFromObject(dataObject).sort((c1, c2) => (c1.order - c2.order));
 
     let items = []
-    
+
     data.forEach(category => {
       let children = category.children;
       children = arrayFromObject(children);

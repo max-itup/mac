@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 // Styled Components
 import styled from 'styled-components';
 
+// Assets
 import logo from '../assets/mobile_logo.svg';
 
 class Mobile extends Component {

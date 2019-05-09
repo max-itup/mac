@@ -42,14 +42,14 @@ function data(state = {}, action) {
                 }
             };
 
-        // any other action: return data
+        // any other action: return state
         default:
             return state;
     }
 }
 
 /**
- * Data Reducers
+ * Script Reducers
  */
 function script(state = "", action) {
     let {script} = action;
@@ -60,7 +60,7 @@ function script(state = "", action) {
         case types.LOAD_SCRIPT:
             return script;
 
-        // any other action: return data
+        // any other action: return state
         default:
             return state;
     }

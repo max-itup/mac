@@ -11,13 +11,14 @@ import Highlight from 'react-highlight'
 // CSS
 import './../styles/atom-one-dark.css';
 
+// Statics
 import {placeholder} from '../utils/statics';
 
 class Script extends Component {
   static propTypes = {
     script: PropTypes.string,
   }
-  
+
   render() {
     let {script = ""} = this.props;
     script = placeholder.replace('{{MAIN}}', script);

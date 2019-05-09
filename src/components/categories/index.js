@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 // Styled Components
 import styled from 'styled-components';
 
+// Components
 import Button from './button';
 
 class Categories extends Component {
@@ -17,14 +18,14 @@ class Categories extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(e) {    
+  handleClick(e) {
     const id = e.target.id.replace('category-', '');
     document.getElementById(id).scrollIntoView({ block: 'start',  behavior: 'smooth' });
   }
 
   render() {
     const {categories} = this.props;
-    
+
     return (
       <Wrapper>
         {categories.map(c => <Button key={c.id} category={c} onMouseUp={this.handleClick}/>)}
@@ -42,7 +43,7 @@ const Wrapper = styled.div`
   align-items: flex-start;
   padding: 12px;
   height: calc(100% - 32px);
-  
+
   ::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
@@ -62,11 +63,11 @@ const Wrapper = styled.div`
     :hover {
       background-color: black;
     }
-    
+
     :focus {
         outline: 0;
     }
-    
+
   }
 `;
 

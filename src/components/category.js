@@ -21,7 +21,7 @@ class Category extends Component {
       if(i1.id < i2.id) { return -1; }
       if(i1.id > i2.id) { return 1; }
       return 0;
-    })    
+    })
 
     return (
       <Wrapper id={category.id}>
