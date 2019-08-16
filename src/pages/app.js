@@ -58,7 +58,7 @@ class App extends Component {
   }
 
   fetchData() {
-    const url = 'https://raw.githubusercontent.com/max-itup/content/master/mac/data.json'
+    const url = 'http://localhost:3000/data.json'
     fetch(url)
       .then(response => response.json())
       .then(data => {
