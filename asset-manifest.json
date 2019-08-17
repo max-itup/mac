@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mac/static/css/main.3ea87608.chunk.css",
-    "main.js": "/mac/static/js/main.6f8406b0.chunk.js",
-    "main.js.map": "/mac/static/js/main.6f8406b0.chunk.js.map",
+    "main.js": "/mac/static/js/main.acb31db3.chunk.js",
+    "main.js.map": "/mac/static/js/main.acb31db3.chunk.js.map",
     "runtime~main.js": "/mac/static/js/runtime~main.6a7b9e5f.js",
     "runtime~main.js.map": "/mac/static/js/runtime~main.6a7b9e5f.js.map",
     "static/css/2.169c1094.chunk.css": "/mac/static/css/2.169c1094.chunk.css",
     "static/js/2.88f2e317.chunk.js": "/mac/static/js/2.88f2e317.chunk.js",
     "static/js/2.88f2e317.chunk.js.map": "/mac/static/js/2.88f2e317.chunk.js.map",
     "index.html": "/mac/index.html",
-    "precache-manifest.70ce0c151525ca9c1cd55c1d6dde42ab.js": "/mac/precache-manifest.70ce0c151525ca9c1cd55c1d6dde42ab.js",
+    "precache-manifest.3f8ef65757f033d89d34a8e68fbebc33.js": "/mac/precache-manifest.3f8ef65757f033d89d34a8e68fbebc33.js",
     "service-worker.js": "/mac/service-worker.js",
     "static/css/2.169c1094.chunk.css.map": "/mac/static/css/2.169c1094.chunk.css.map",
     "static/css/main.3ea87608.chunk.css.map": "/mac/static/css/main.3ea87608.chunk.css.map",
