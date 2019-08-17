@@ -29,6 +29,7 @@ export function objectFromArray(arr, key = 'id') {
     let brew_items = [];
     let gem_items = [];
     let os_settings_items = [];
+    let shell_script_items = [];
 
     itemsArray.forEach(item => {
       if (item.type === 'cask') {
@@ -39,6 +40,8 @@ export function objectFromArray(arr, key = 'id') {
         gem_items.push(item);
       } else if (item.category === 'os_settings') {
         os_settings_items.push(item);
+      } else if (item.category === 'shell_scripts') {
+        shell_script_items.push(item);
       }
     });
 
@@ -47,6 +50,7 @@ export function objectFromArray(arr, key = 'id') {
     script = script.replace('{{PACKAGES}}', statics.brew(brew_items));
     script = script.replace('{{GEMS}}', statics.gems(gem_items));
     script = script.replace('{{OS_SETTINGS}}', statics.os_settings(os_settings_items));
+    script = script.replace('{{SHELL_SCRIPTS}}', statics.shell_scripts(shell_script_items));
     return script;
   }
 

@@ -26,6 +26,7 @@ brew update
 {{PACKAGES}}{{CASKS}}{{GEMS}}
 echo "🧼 Cleaning up..."
 brew cleanup -s
+{{SHELL_SCRIPTS}}
 {{OS_SETTINGS}}
 echo "🎉 Setup complete!"`;
 
@@ -71,6 +72,18 @@ GEMS=(
 )
 echo "💎 Installing Ruby gems..."
 sudo gem install \${GEMS[@]} -N
+`
+}
+
+export function shell_scripts(items) {
+    if (items.length === 0) {
+        return  "" ;
+    }
+
+    const codes = items.map(c => c.code).join(" && \\\n");
+    return `
+echo "💻 Running Scripts..."
+${codes}
 `
 }
 
